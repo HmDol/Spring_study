@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<script>
+window.onload = () => {
+//초기화
+	alert('윈도우 로드됨');
+}
+const a = () => {
+	alert("당신의 이름은 "+f.t1.value+"입니다.")
+}
+
+</script>
+
+<body>
+<form action="" name="f">
+<input type="text" name="t1">
+<input type="button" nmae="b1" value="이름확인" onclick="a()"><br>
+
+</form>
+
+</body>
+</html>

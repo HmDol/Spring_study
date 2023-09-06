@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+
+<script>
+let arr = [1,2,3];
+arr[3] = 4;
+
+for(i=0;i<arr.length;i++){
+	document.write(arr[i]+"<br/>");
+}
+
+let arr2 = new Array();
+arr2[0] = "aaa";
+arr2[1] = "bbb";
+
+for(i=0;i<arr2.length;i++){
+	document.write(arr[i]+"<br/>");
+}
+
+</script>
+
+</body>
+</html>
