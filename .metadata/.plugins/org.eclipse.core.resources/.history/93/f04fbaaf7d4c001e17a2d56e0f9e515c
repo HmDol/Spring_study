@@ -1,0 +1,52 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<script>
+let cate1 = ["의류", "가전", "컴퓨터"];
+let cate2 = [["여성복", "남성복", "아동복"], ["TV","세탁기","냉장고"], ["데스크탑", "노트북", "주변기기"]];
+let cate3 = [[["원피스","투피스"], ["셔츠","바지","남방"],["내복", "우주복"]],
+	[["LG TV","삼성TV","중소TV"],["LG세탁기","삼성세탁기","중소 세탁기"],["LG냉장고","삼성냉장고","중소냉장고"]],
+	[["LG데스크탑","삼성데스크탑","중소 데스크탑"],["LG노트북","삼성노트북","중소노트북"],["프린터","스피커","마이크"]]];
+
+const a = () => {
+	let txt = "<table style='background-clolr:gray' border='1'>";
+	for(let s of cate1){
+		txt += "<tr><td style='width:100px; height:40px'>" + s + "</td></tr>";
+	}
+	txt +="</table>";
+	let e1 = document.getElementById("cate1");
+	e1.innerHTML = txt;
+	e1.style.display='';
+}
+
+const b = () => {
+	let e1 = document.getElementById("cate1");
+	e1.innerHTML = "";
+	e1.style.display='none';
+}
+</script> 	
+<body>
+<center>
+<table border ="1">
+<tr>
+<td style ="width : 700px; height:200px">
+<div id="cate" style="width:200px; height: 100% ;border:1px solid black" onmouseover="a()" onmouserout="b()">카테고리</div>
+</td>
+</tr>
+
+<tr>
+<td style ="width : 700px; height:500px">
+<div id = "content">
+	
+</div>
+</td>
+</tr>
+</table>
+</center>
+</body>
+</html>

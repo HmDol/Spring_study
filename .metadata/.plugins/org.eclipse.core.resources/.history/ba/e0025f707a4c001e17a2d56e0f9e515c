@@ -1,0 +1,61 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<style>
+#categoryContainer ul {
+    display: none;
+}
+
+#categoryContainer:hover ul {
+    display: block;
+}
+</style>
+<script>
+let cate1 = ["의류", "가전", "컴퓨터"];
+let cate2 = [["여성복", "남성복", "아동복"], ["TV","세탁기","냉장고"], ["데스크탑", "노트북", "주변기기"]];
+let cate3 = [[["원피스","투피스"], ["셔츠","바지","남방"],["내복", "우주복"]],
+	[["LG TV","삼성TV","중소TV"],["LG세탁기","삼성세탁기","중소 세탁기"],["LG냉장고","삼성냉장고","중소냉장고"]],
+	[["LG데스크탑","삼성데스크탑","중소 데스크탑"],["LG노트북","삼성노트북","중소노트북"],["프린터","스피커","마이크"]]];
+
+window.onload = function() {
+    let ul1 = document.getElementById('cate1');
+
+    for(let i=0; i<cate1.length; i++) {
+        let li1 = document.createElement('li');
+        li1.textContent = cate1[i];
+        
+        let ul2 = document.createElement('ul');
+        for(let j=0; j<cate2[i].length; j++) {
+            let li2 = document.createElement('li');
+            li2.textContent = cate2[i][j];
+            
+            let ul3 = document.createElement('ul');
+            for(let k=0; k<cate3[i][j].length; k++) {
+                let li3=document.createElement('li');
+                li3.textContent=cate3[i][j][k];
+                ul3.appendChild(li3);
+            }
+            
+            li2.appendChild(ul3);
+            ul2.appendChild(li2);
+        }
+        
+        li1.appendChild(ul2);
+        ul1.appendChild(li1);
+    }
+};
+</script>
+
+<body>
+<center>
+<div id="categoryContainer">
+    <ul id="cate1"></ul>
+</div>
+</center>
+</body>
+</html>
