@@ -9,5 +9,6 @@
 <body>
 <h1>로그인 성공</h1>
 <a href="/app1/MemListController">회원목록</a>
+<a href="/app1/ProListController">상품목록</a>
 </body>
 </html>

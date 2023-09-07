@@ -9,6 +9,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.catalina.tribes.membership.Membership;
+
+import Member.Member;
+import Member.MemberService;
+
 /**
  * Servlet implementation class MemEditController
  */
@@ -32,11 +37,12 @@ public class MemEditController extends HttpServlet {
 		String id = request.getParameter("id");
 		String name = request.getParameter("name");
 		String email = request.getParameter("email");
+		String pwd = request.getParameter("pwd");
 		request.setAttribute("id", id);
 		request.setAttribute("name", name);
 		request.setAttribute("email", email);
+		request.setAttribute("pwd", pwd);
 		
-//		response.getWriter().append(id + " / " + name + " / " + email);
 		
 		RequestDispatcher dis = request.getRequestDispatcher("/Member/edit.jsp");
 		dis.forward(request, response);
@@ -46,8 +52,14 @@ public class MemEditController extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+		String id = request.getParameter("id");
+		String name = request.getParameter("name");
+		String pwd = request.getParameter("pwd");
+		MemberService service = new MemberService();
+		service.editMember(new Member(id,pwd,name,""));
+		
+		RequestDispatcher dis = request.getRequestDispatcher("/MemListController");
+		dis.forward(request, response);
 	}
 
 }
