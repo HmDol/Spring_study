@@ -35,13 +35,10 @@ public class MemEditController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		String id = request.getParameter("id");
-		String name = request.getParameter("name");
-		String email = request.getParameter("email");
-		String pwd = request.getParameter("pwd");
-		request.setAttribute("id", id);
-		request.setAttribute("name", name);
-		request.setAttribute("email", email);
-		request.setAttribute("pwd", pwd);
+		MemberService service = new MemberService();
+		
+		Member m = service.getMebmer(id);
+		request.setAttribute("m", m);
 		
 		
 		RequestDispatcher dis = request.getRequestDispatcher("/Member/edit.jsp");

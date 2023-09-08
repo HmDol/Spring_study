@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="Member.Member"/>
+    <fullyQualifiedTypeName name="org.apache.catalina.tribes.membership.Membership"/>
+    <fullyQualifiedTypeName name="Member.MemberService"/>
+    <fullyQualifiedTypeName name="Product.ProductDao"/>
+    <fullyQualifiedTypeName name="Product.Controllers.ProListController"/>
+    <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+    <fullyQualifiedTypeName name="Product.ProductService"/>
+</qualifiedTypeNameHistroy>

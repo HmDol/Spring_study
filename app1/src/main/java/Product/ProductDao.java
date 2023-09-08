@@ -131,7 +131,7 @@ public class ProductDao {
 		Connection conn = dbconn.conn();
 
 		// 2. sql 작성
-		String sql = "select * from product where price between ? and ?";
+		String sql = "select * from product where price between ? and ? order by num";
 
 		try {
 			// 3. preparedstatement 생성
@@ -170,7 +170,7 @@ public class ProductDao {
 		Connection conn = dbconn.conn();
 
 		// 2. sql 작성
-		String sql = "select * from product where seller=?";
+		String sql = "select * from product where seller=? order by num";
 
 		try {
 			// 3. preparedstatement 생성
@@ -208,7 +208,7 @@ public class ProductDao {
 		Connection conn = dbconn.conn();
 
 		// 2. sql 작성
-		String sql = "select * from product";
+		String sql = "select * from product order by num";
 
 		try {
 			// 3. preparedstatement 생성

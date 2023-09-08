@@ -8,6 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import Member.Member;
 import Member.MemberService;
@@ -53,6 +54,9 @@ public class LoginController extends HttpServlet {
 		Member m = service.getMebmer(id);
 		if(m != null && pwd.equals(m.getPwd())) {
 			path = "/Member/menu.jsp";
+			
+			HttpSession session = request.getSession();
+			session.setAttribute("loginId",id);
 		}
 		
 		RequestDispatcher dis = request.getRequestDispatcher(path);
