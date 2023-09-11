@@ -2,9 +2,10 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="Member.Member"/>
     <fullyQualifiedTypeName name="org.apache.catalina.tribes.membership.Membership"/>
-    <fullyQualifiedTypeName name="Member.MemberService"/>
     <fullyQualifiedTypeName name="Product.ProductDao"/>
     <fullyQualifiedTypeName name="Product.Controllers.ProListController"/>
-    <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+    <fullyQualifiedTypeName name="Member.MemberService"/>
+    <fullyQualifiedTypeName name="Product.Controllers.MyProdListController"/>
     <fullyQualifiedTypeName name="Product.ProductService"/>
+    <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
 </qualifiedTypeNameHistroy>
