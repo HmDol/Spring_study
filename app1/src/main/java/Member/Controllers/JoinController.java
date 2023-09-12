@@ -61,26 +61,26 @@ public class JoinController extends HttpServlet {
 		String msg = request.getParameter("msg");
 		String birth = request.getParameter("birth");
 		
-		response.getWriter().append("<html><body>");
-		response.getWriter().append("id: " + id);
-		response.getWriter().append("pwd: " +pwd);
-		response.getWriter().append("name: " + name);
-		response.getWriter().append("email: " + email );
-		response.getWriter().append("gen: " + gen);
-		response.getWriter().append("sel: " + sel);
-		response.getWriter().append("msg: " + msg);
-		response.getWriter().append("birth: " + birth);
-		String bb = "";
-		for(String s : hobby) {
-			bb += s+" / ";
-		}
-		response.getWriter().append("hobby: "+ bb);
-		response.getWriter().append("</body></html>");
-//		MemberService service = new MemberService();
-//		service.join(new Member(id,pwd,name,email));
-//		
-//		RequestDispatcher dis = request.getRequestDispatcher("/index.jsp");
-//		dis.forward(request, response);
+//		response.getWriter().append("<html><body>");
+//		response.getWriter().append("id: " + id);
+//		response.getWriter().append("pwd: " +pwd);
+//		response.getWriter().append("name: " + name);
+//		response.getWriter().append("email: " + email );
+//		response.getWriter().append("gen: " + gen);
+//		response.getWriter().append("sel: " + sel);
+//		response.getWriter().append("msg: " + msg);
+//		response.getWriter().append("birth: " + birth);
+//		String bb = "";
+//		for(String s : hobby) {
+//			bb += s+" / ";
+//		}
+//		response.getWriter().append("hobby: "+ bb);
+//		response.getWriter().append("</body></html>");
+		MemberService service = new MemberService();
+		service.join(new Member(id,pwd,name,email));
+		
+		RequestDispatcher dis = request.getRequestDispatcher("/index.jsp");
+		dis.forward(request, response);
 		
 	}
 
