@@ -1,6 +1,9 @@
 package imgboard;
 
 import java.sql.Date;
+import java.util.ArrayList;
+
+import imgrep.Imgrep;
 
 public class ImgBoard {
 	private int num;
@@ -9,6 +12,7 @@ public class ImgBoard {
 	private String title;
 	private String content;
 	private String path;
+	private ArrayList<Imgrep> reps;
 	
 	
 	public ImgBoard() {}
@@ -27,6 +31,15 @@ public class ImgBoard {
 	public String toString() {
 		return "ImgBoard [num=" + num + ", writer=" + writer + ", wdate=" + wdate + ", title=" + title + ", content="
 				+ content + ", path=" + path + "]";
+	}
+
+	
+	public ArrayList<Imgrep> getReps() {
+		return reps;
+	}
+
+	public void setReps(ArrayList<Imgrep> reps) {
+		this.reps = reps;
 	}
 
 	public int getNum() {

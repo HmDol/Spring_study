@@ -7,7 +7,7 @@
 <meta charset="EUC-KR">
 <title>Insert title here</title>
 </head>
-<body>
+<body style="padding-left : 280px;">
 	<table border="1">
 		<tr>
 			<td colspan="2" style="text-align: center">
@@ -32,12 +32,12 @@
 					<a href="${pageContext.request.contextPath }/listImgController">글목록</a><br/>
 				</c:if>
 			</td>
-			<td style="width: 600px; height: 400px">
-
+			<td style="text-align:center; width: 600px; height: 400px">
+				<center>
 					<c:if test="${view != null}">
 						<jsp:include page="${view }"/>
 					</c:if>
-
+				</center>
 			</td>
 		</tr>
 		<tr>

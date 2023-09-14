@@ -57,7 +57,7 @@ public class addImgController extends HttpServlet {
 				String writer = multipart.getParameter("writer");
 				String content = multipart.getParameter("content");
 				
-				File uploadFile = multipart.getFile("file"); 
+				File uploadFile = multipart.getFile("file"); //form양식에서 올라온 file 
 				String fname = uploadFile.getName(); // getName() : 파일명
 				
 				ImgBoardService service = new ImgBoardService();

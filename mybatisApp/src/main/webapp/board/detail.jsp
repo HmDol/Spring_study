@@ -40,6 +40,6 @@ const del = () => {
 </c:if>
 </table>
 </form>
-<a href="/app1/board/list">목록으로</a>
+<a href="${pageContext.request.contextPath }/board/list">목록으로</a>
 </body>
 </html>

@@ -7,10 +7,19 @@
     <fullyQualifiedTypeName name="Member.MemberService"/>
     <fullyQualifiedTypeName name="Product.Controllers.MyProdListController"/>
     <fullyQualifiedTypeName name="Product.ProductService"/>
-    <fullyQualifiedTypeName name="java.sql.Date"/>
     <fullyQualifiedTypeName name="org.apache.ibatis.annotations.Select"/>
-    <fullyQualifiedTypeName name="sqlsession.Factory"/>
     <fullyQualifiedTypeName name="GuestBook.GuestBook"/>
     <fullyQualifiedTypeName name="GuestBook.GuestBookService"/>
+    <fullyQualifiedTypeName name="com.oreilly.servlet.MultipartRequest"/>
+    <fullyQualifiedTypeName name="sqlsession.Factory"/>
+    <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSessionFactory"/>
+    <fullyQualifiedTypeName name="member.MemberService"/>
+    <fullyQualifiedTypeName name="member.Member"/>
     <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+    <fullyQualifiedTypeName name="imgboard.ImgBoard"/>
+    <fullyQualifiedTypeName name="imgboard.ImgBoardDao"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.sql.Date"/>
+    <fullyQualifiedTypeName name="imgboard.ImgBoardService"/>
+    <fullyQualifiedTypeName name="imgrep.ImgrepDao"/>
 </qualifiedTypeNameHistroy>

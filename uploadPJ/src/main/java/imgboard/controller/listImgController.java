@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import imgboard.ImgBoard;
 import imgboard.ImgBoardService;
+import imgrep.ImgrepService;
 
 /**
  * Servlet implementation class listImgController
@@ -34,7 +35,12 @@ public class listImgController extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		ImgBoardService service = new ImgBoardService();
+		ImgrepService rservice = new ImgrepService();
 		ArrayList<ImgBoard> list = service.getAll();
+		for(ImgBoard ib:list) {
+			ib.setReps(rservice.getReps(ib.getNum()));
+			
+		}
 		request.setAttribute("list", list);
 		request.setAttribute("view", "/imgboard/list.jsp");
 		RequestDispatcher dis = request.getRequestDispatcher("/index.jsp");
