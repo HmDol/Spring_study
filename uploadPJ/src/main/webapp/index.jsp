@@ -27,9 +27,14 @@
 		<tr>
 			<td style="width: 200px; height: 400px; text-align: center">
 				<c:if test="${sessionScope.loginId != null}">
-					<h4>메뉴</h4> 
+					<h4>게시글</h4> 
 					<a href="${pageContext.request.contextPath }/addImgController">글작성</a><br/>
 					<a href="${pageContext.request.contextPath }/listImgController">글목록</a><br/>
+					
+					<h4>자료실</h4>
+					<a href="${pageContext.request.contextPath }/dataroom/add">자료작성</a><br/>
+					<a href="${pageContext.request.contextPath }/dataroom/list">자료실 목록</a><br/>
+					
 				</c:if>
 			</td>
 			<td style="text-align:center; width: 600px; height: 400px">
