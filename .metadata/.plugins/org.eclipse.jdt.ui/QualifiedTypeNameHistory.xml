@@ -14,7 +14,6 @@
     <fullyQualifiedTypeName name="sqlsession.Factory"/>
     <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSessionFactory"/>
     <fullyQualifiedTypeName name="member.MemberService"/>
-    <fullyQualifiedTypeName name="member.Member"/>
     <fullyQualifiedTypeName name="imgboard.ImgBoard"/>
     <fullyQualifiedTypeName name="imgboard.ImgBoardDao"/>
     <fullyQualifiedTypeName name="imgboard.ImgBoardService"/>
@@ -25,4 +24,9 @@
     <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
     <fullyQualifiedTypeName name="dataroom.DataRoomService"/>
     <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="handler.member.JoinHandler"/>
+    <fullyQualifiedTypeName name="member.Member"/>
+    <fullyQualifiedTypeName name="shopprod.ShopProd"/>
+    <fullyQualifiedTypeName name="handler.Handler"/>
+    <fullyQualifiedTypeName name="shopprod.ShopProdService"/>
 </qualifiedTypeNameHistroy>
