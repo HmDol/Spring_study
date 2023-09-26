@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,10 +14,10 @@
 	<tr>
 		<td>${sp.num }</td>
 		<td>
-			<a href="">${b.name }</a>
+			<a href="${pageContext.request.contextPath }/shopprod/edit.do?num=${sp.num}">${sp.name }</a>
 		</td>
 		<td>${sp.price }</td>
-		<td>${b.seller }</td>
+		<td>${sp.seller }</td>
 	</tr>
 </c:forEach>
 </table>

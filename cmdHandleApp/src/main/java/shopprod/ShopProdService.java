@@ -49,7 +49,7 @@ private SqlSessionFactory sqlSessionFactory;
 	public ArrayList<ShopProd> getBySeller(String seller){		
 		SqlSession session = sqlSessionFactory.openSession();	
 		ShopProdDao dao = session.getMapper(ShopProdDao.class);		
-		ArrayList<ShopProd> list = dao.selectByName("%"+seller+"%");	
+		ArrayList<ShopProd> list = dao.selectBySeller("%"+seller+"%");	
 		session.close();
 		return list;
 	}

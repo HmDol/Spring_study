@@ -27,6 +27,6 @@
     <fullyQualifiedTypeName name="handler.member.JoinHandler"/>
     <fullyQualifiedTypeName name="member.Member"/>
     <fullyQualifiedTypeName name="shopprod.ShopProd"/>
-    <fullyQualifiedTypeName name="handler.Handler"/>
     <fullyQualifiedTypeName name="shopprod.ShopProdService"/>
+    <fullyQualifiedTypeName name="handler.Handler"/>
 </qualifiedTypeNameHistroy>

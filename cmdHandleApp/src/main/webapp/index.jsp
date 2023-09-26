@@ -26,7 +26,7 @@
 		</c:if>
 		<c:if test="${sessionScope.loginId != null }">
 			<td style="width:70px"><a href="${pageContext.request.contextPath }/member/edit.do?id=${sessionScope.loginId}">내정보</a></td>
-			<td style="width:70px"><a href="${pageContext.request.contextPath }/member/out.do">로그아웃</a></td>
+			<td style="width:70px"><a href="${pageContext.request.contextPath }/member/out.do">로그아웃<	/a></td>
 			<td style="width:70px">
 				<form action="${pageContext.request.contextPath }/member/out.do?id=${sessionScope.loginId}" method="post">
 					<button>탈퇴</button>

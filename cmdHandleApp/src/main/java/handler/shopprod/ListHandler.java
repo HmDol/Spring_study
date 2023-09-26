@@ -15,14 +15,15 @@ public class ListHandler implements Handler {
 	public String process(HttpServletRequest request, HttpServletResponse response) {
 		String view = "/index.jsp";
 		
-		if(request.getMethod().equals("Get")) {
+		if(request.getMethod().equals("GET")) {
+//			System.out.println("GET요청 받음");
 			String seller = request.getParameter("seller");
+//			System.out.println(seller);
 			ShopProdService service = new ShopProdService();
 			ArrayList<ShopProd> list= service.getBySeller(seller);
+//			System.out.println(list);
 			request.setAttribute("list", list);
 			request.setAttribute("view", "/shopprod/list.jsp");
-			
-			
 					
 		}else {
 			

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+	<book>
+		<bookid>1</bookid>
+		<title>전산학개론</title>
+		<author>김개똥</author>
+		<price>20000</price>
+	</book>
+	<book>
+		<bookid>2</bookid>
+		<title>컴퓨터 구조론</title>
+		<author>김구조</author>
+		<price>30000</price>
+	</book>
+	<book>
+		<bookid>3</bookid>
+		<title>컴파일러론</title>
+		<author>파일러</author>
+		<price>40000</price>
+	</book>
+	<book>
+		<bookid>4</bookid>
+		<title>운영체제론</title>
+		<author>이운영</author>
+		<price>50000</price>
+	</book>
+</books>
